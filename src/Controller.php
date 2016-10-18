@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Cache;
 use ReflectionClass;
 use Spatie\EloquentSortable\SortableInterface;
 
-abstract class ModuleController
+abstract class Controller
 {
     use Updaters\UpdateMedia;
     use Updaters\UpdateOnlineToggle;

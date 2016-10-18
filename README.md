@@ -2,9 +2,8 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/blender-model.svg?style=flat-square)](https://packagist.org/packages/spatie/blender-model)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/xxxxxxxxx.svg?style=flat-square)](https://insight.sensiolabs.com/projects/xxxxxxxxx)
+[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/9b403fd2-e879-4bdb-8368-3f776c27d52a.svg?style=flat-square)](https://insight.sensiolabs.com/projects/9b403fd2-e879-4bdb-8368-3f776c27d52a)
 [![Quality Score](https://img.shields.io/scrutinizer/g/spatie/blender-model.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/blender-model)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/blender-model.svg?style=flat-square)](https://packagist.org/packages/spatie/blender-model)
 
 See https://github.com/spatie-custom/blender
 

@@ -2,6 +2,7 @@
 
 namespace Spatie\Blender\Model\Updaters;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\FormRequest;
 

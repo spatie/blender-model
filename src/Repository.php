@@ -2,13 +2,13 @@
 
 namespace Spatie\Blender\Model;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 
 abstract class Repository
 {
-    public function save(Model $model): bool
+    public function save(Eloquent $model): bool
     {
         $saved = $model->save();
 
@@ -19,7 +19,7 @@ abstract class Repository
         return $saved;
     }
 
-    public function delete(Model $model): bool
+    public function delete(Eloquent $model): bool
     {
         $deleted = $model->delete();
 

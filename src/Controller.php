@@ -2,7 +2,7 @@
 
 namespace Spatie\Blender\Model;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
@@ -100,12 +100,12 @@ abstract class Controller
         return redirect()->to($this->action('index'));
     }
 
-    public function changeOrder(Request $request)
+    public function changeOrder()
     {
-        call_user_func([$this->modelClass, 'setNewOrder'], $request->get('ids'));
+        call_user_func([$this->modelClass, 'setNewOrder'], request('ids'));
     }
 
-    protected function find(int $id): Model
+    protected function find(int $id): Eloquent
     {
         return call_user_func("{$this->modelClass}::findOrFail", $id);
     }
@@ -153,7 +153,7 @@ abstract class Controller
         $model->save();
     }
 
-    protected function updatedEventDescriptionFor($model): string
+    protected function updatedEventDescriptionFor(Eloquent $model): string
     {
         $modelName = fragment("back.{$this->moduleName}.singular");
 
@@ -166,7 +166,7 @@ abstract class Controller
         return fragment('back.events.updated', ['model' => $modelName, 'name' => $linkToModel]);
     }
 
-    protected function deletedEventDescriptionFor($model): string
+    protected function deletedEventDescriptionFor(Eloquent $model): string
     {
         $modelName = fragment("back.{$this->moduleName}.singular");
 

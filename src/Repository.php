@@ -64,7 +64,7 @@ abstract class Repository
      *
      * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function findByUrl(string $url, $with = [])
+    public function findByUrl(string $url, array $with = [])
     {
         $model = static::MODEL;
 

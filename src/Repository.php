@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Blender\Model\Repository;
+namespace Spatie\Blender\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;

@@ -1,4 +1,4 @@
-# Very short description of the package
+# Base model for entities in our Blender Laravel template
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/blender-model.svg?style=flat-square)](https://packagist.org/packages/spatie/blender-model)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -6,7 +6,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/spatie/blender-model.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/blender-model)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/blender-model.svg?style=flat-square)](https://packagist.org/packages/spatie/blender-model)
 
-Base model for entities in our Blender Laravel template. See https://github.com/spatie-custom/blender.
+See https://github.com/spatie-custom/blender
 
 Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
 

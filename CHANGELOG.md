@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 1.0.5 - 2016-10-20
+- Added `updateFields` to `Controller`
+
 ## 1.0.4 - 2016-10-20
 - Fixed `Sortable` check in `Controller`
 

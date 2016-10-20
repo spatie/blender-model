@@ -153,6 +153,13 @@ abstract class Controller
         $model->save();
     }
 
+    protected function updateFields(Model $model, FormRequest $request, array $fields)
+    {
+        collect($fields)->each(function ($field) use ($model, $request) {
+            $model->$field = $request->get($field, false);
+        });
+    }
+
     protected function updatedEventDescriptionFor(Eloquent $model): string
     {
         $modelName = fragment("back.{$this->moduleName}.singular");

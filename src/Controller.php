@@ -7,7 +7,7 @@ use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use ReflectionClass;
-use Spatie\EloquentSortable\SortableInterface;
+use Spatie\EloquentSortable\Sortable;
 
 abstract class Controller
 {
@@ -114,7 +114,7 @@ abstract class Controller
     {
         $query = call_user_func("{$this->modelClass}::query")->nonDraft();
 
-        if (array_key_exists(SortableInterface::class, class_implements($this->modelClass))) {
+        if (array_key_exists(Sortable::class, class_implements($this->modelClass))) {
             $query->orderBy('order_column', 'asc');
         }
 

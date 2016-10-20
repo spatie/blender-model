@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 1.0.4 - 2016-10-20
+- Fixed `Sortable` check in `Controller`
+
 ## 1.0.3 - 2016-10-20
 - Controller module name resolve fix
 - Removed `Repository`

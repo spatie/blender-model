@@ -130,7 +130,7 @@ abstract class Controller
 
     protected function determineModuleName(): string
     {
-        return str_replace_last('Controller', '', class_basename($this));
+        return lcfirst(str_replace_last('Controller', '', class_basename($this)));
     }
 
     protected function determineUpdateRequestClass(): string

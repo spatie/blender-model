@@ -2,6 +2,10 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+
+## 1.0.6 - 2016-10-22
+- Allow eloquent-sortable v3
+
 ## 1.0.5 - 2016-10-20
 - Added `updateFields` to `Controller`
 

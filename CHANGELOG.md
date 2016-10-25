@@ -2,6 +2,8 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 1.0.7 - 2016-10-25
+- Made `DateUpdater` much more generic
 
 ## 1.0.6 - 2016-10-22
 - Allow eloquent-sortable v3

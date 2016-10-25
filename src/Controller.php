@@ -37,9 +37,9 @@ abstract class Controller
         return view("back.{$this->moduleName}.index")->with('models', $models);
     }
 
-    public function create()
+    public function create(...$arguments)
     {
-        $model = $this->make();
+        $model = $this->make(...$arguments);
 
         return redirect()->to($this->action('edit', $model->id));
     }

@@ -13,7 +13,7 @@ abstract class Controller
 {
     use Updaters\UpdateMedia;
     use Updaters\UpdateOnlineToggle;
-    use Updaters\UpdatePublishDate;
+    use Updaters\UpdateDates;
     use Updaters\UpdateSeoValues;
     use Updaters\UpdateTags;
     use Updaters\UpdateTranslations;
@@ -147,7 +147,7 @@ abstract class Controller
         $this->updateTranslations($model, $request);
         $this->updateMedia($model, $request);
         $this->updateOnlineToggle($model, $request);
-        $this->updatePublishDate($model, $request);
+        $this->updateDates($model, $request);
         $this->updateSeoValues($model, $request);
 
         $model->save();

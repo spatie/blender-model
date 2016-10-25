@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 1.0.8 - 2016-10-25
+- Pass all create method parameters to make method
+
 ## 1.0.7 - 2016-10-25
 - Made `DateUpdater` much more generic
 

@@ -87,7 +87,7 @@ abstract class Controller
 
     public function destroy($id)
     {
-        $model = $this->query()->find($id);
+        $model = $this->find($id);
 
         $eventDescription = $this->deletedEventDescriptionFor($model);
         activity()->log($eventDescription);

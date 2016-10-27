@@ -9,6 +9,6 @@ trait UpdateOnlineToggle
 {
     protected function updateOnlineToggle(Model $model, FormRequest $request)
     {
-        $model->online = $request->has('online') ? $request->get('online') : false;
+        $model->online = $request->get('online') ?? false;
     }
 }

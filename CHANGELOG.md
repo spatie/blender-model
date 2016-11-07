@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 2.0.1 - 2016-11-07
+- remove unused `hasTags`
+
 ## 2.0.0 - 2016-11-07
 - rename all usages of `url` to `slug`
 - add support for `spatie/laravel-tags`

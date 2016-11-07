@@ -142,7 +142,7 @@ abstract class Controller
             ->getName();
     }
 
-    protected function updateModel(Model $model, FormRequest $request)
+    protected function updateModel(Eloquent $model, FormRequest $request)
     {
         $this->updateTranslations($model, $request);
         $this->updateMedia($model, $request);
@@ -153,7 +153,7 @@ abstract class Controller
         $model->save();
     }
 
-    protected function updateFields(Model $model, FormRequest $request, array $fields)
+    protected function updateFields(Eloquent $model, FormRequest $request, array $fields)
     {
         collect($fields)->each(function ($field) use ($model, $request) {
             $model->$field = $request->get($field, false);

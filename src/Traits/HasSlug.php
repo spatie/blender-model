@@ -7,7 +7,7 @@ trait HasSlug
     public static function bootHasSlug()
     {
         static::saving(function ($model) {
-            $model->attributes['url'] = $model->generateSlug();
+            $model->attributes['slug'] = $model->generateSlug();
         });
     }
 

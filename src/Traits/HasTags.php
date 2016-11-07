@@ -2,22 +2,20 @@
 
 namespace Spatie\Blender\Model\Traits;
 
-use App\Models\Enums\TagType;
 use App\Models\Tag;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 trait HasTags
 {
-    public function tags(): MorphToMany
+    public static function getTagClassName(): string
     {
-        return $this->morphToMany(Tag::class, 'taggable');
+        return \App\Models\Tag::class;
     }
 
-    public function tagsWithType(TagType $type): Collection
+    public function tagsWithType(string $type): Collection
     {
         return $this->tags->filter(function (Tag $tag) use ($type) {
-            return $tag->hasType($type);
+            return $tag->type === $type;
         });
     }
 }

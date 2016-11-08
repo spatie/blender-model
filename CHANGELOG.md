@@ -2,8 +2,11 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
-## 2.0.2 - 2016-11-08
+## 2.1.1 - 2016-11-08
 - fix for saving custom properties on media
+
+## 2.1.0 - 2016-11-08
+- Updated Vuex to 2.0.0-rc
 
 ## 2.0.1 - 2016-11-07
 - remove unused `hasTags`

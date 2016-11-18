@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 2.1.2 - 2016-11-17
+- PR #8
+
 ## 2.1.1 - 2016-11-08
 - fix for saving custom properties on media
 

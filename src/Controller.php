@@ -103,6 +103,8 @@ abstract class Controller
     public function changeOrder()
     {
         call_user_func([$this->modelClass, 'setNewOrder'], request('ids'));
+
+        Cache::flush();
     }
 
     protected function find(int $id): Eloquent

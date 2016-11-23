@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 2.1.3 - 2016-11-23
+- Flush cache after `changeOrder`
+
 ## 2.1.2 - 2016-11-17
 - PR #8
 

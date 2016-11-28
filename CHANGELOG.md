@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 3.0.1 - 2016-11-28
+- fix tag updater
+
 ## 3.0.0 - 2016-11-28
 - make compatible with laravel-tags
 

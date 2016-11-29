@@ -53,12 +53,6 @@ abstract class Controller
     {
         $model = $this->find($id);
 
-        if (request()->has('revert')) {
-            $model->clearTemporaryMedia();
-
-            return redirect()->to($this->action('edit', $id));
-        }
-
         return view("back.{$this->moduleName}.edit")
             ->with('model', $model)
             ->with('module', $this->moduleName);

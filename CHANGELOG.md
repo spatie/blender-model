@@ -2,11 +2,14 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 3.1.0 - 2016-11-29
+- The `mediaLibraryCollections` should now be an associative array with the collection type
+
 ## 3.0.1 - 2016-11-28
-- fix tag updater
+- Fix tag updater
 
 ## 3.0.0 - 2016-11-28
-- make compatible with laravel-tags
+- Make compatible with laravel-tags
 
 ## 2.1.3 - 2016-11-23
 - Flush cache after `changeOrder`

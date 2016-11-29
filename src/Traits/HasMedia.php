@@ -11,7 +11,12 @@ trait HasMedia
 {
     use HasMediaTrait;
 
-    public function mediaLibraryCollections(): array
+    public function mediaLibraryCollectionType(string $name): string
+    {
+        return $this->mediaLibraryCollections[$name];
+    }
+
+    public function mediaLibraryCollectionNames(): array
     {
         return array_keys($this->mediaLibraryCollections) ?? [];
     }

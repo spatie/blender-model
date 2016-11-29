@@ -3,7 +3,7 @@
 All Notable changes to `blender-model` will be documented in this file
 
 ## 3.1.0 - 2016-11-29
-- The `mediaLibraryCollections` should now be an associative array with the collection type
+- The `mediaLibraryCollections` property should now be an associative array with the collection type
 
 ## 3.0.1 - 2016-11-28
 - Fix tag updater

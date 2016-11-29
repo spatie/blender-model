@@ -2,7 +2,6 @@
 
 namespace Spatie\Blender\Model\Updaters;
 
-use App\Models\Enums\TagType;
 use App\Models\Tag;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\FormRequest;

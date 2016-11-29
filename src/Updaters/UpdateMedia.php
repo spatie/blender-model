@@ -29,8 +29,8 @@ trait UpdateMedia
 
     protected function convertKeysToSnakeCase(array $array): array
     {
-        return collect($array)->map(function($mediaProperties) {
-            return collect($mediaProperties)->keyBy(function($value, $key) {
+        return collect($array)->map(function ($mediaProperties) {
+            return collect($mediaProperties)->keyBy(function ($value, $key) {
                 return snake_case($key);
             });
         })->toArray();

@@ -2,7 +2,7 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
-## 4.0.0 - 2016-01-01
+## 4.0.0 - 2016-01-04
 - Added `NonDraftScope` and `OnlineScope`
 
 ## 3.1.1 - 2016-11-29

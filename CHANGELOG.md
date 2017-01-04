@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 4.0.0 - 2016-01-01
+- Added `NonDraftScope` and `OnlineScope`
+
 ## 3.1.1 - 2016-11-29
 - The `mediaLibraryCollections` property should now be an associative array with the collection type
 

@@ -2,6 +2,8 @@
 
 namespace Spatie\Blender\Model\Traits;
 
+use Illuminate\Database\Eloquent\Builder;
+use Spatie\Blender\Model\Scopes\NonDraftScope;
 use Carbon\Carbon;
 
 trait Draftable
@@ -34,9 +36,11 @@ trait Draftable
      *
      * @return mixed
      */
-    public function scopeDraft($query, $draft = true)
+    public function scopeDraft(Builder $query, $draft = true)
     {
-        return $query->where('draft', $draft);
+        return $query
+            ->withoutGlobalScope(NonDraftScope::class)
+            ->where('draft', $draft);
     }
 
     /**
@@ -55,18 +59,6 @@ trait Draftable
     }
 
     /**
-     * Get the non draft scope.
-     *
-     * @param $query
-     *
-     * @return mixed
-     */
-    public function scopeNonDraft($query)
-    {
-        return $this->scopeDraft($query, false);
-    }
-
-    /**
      * Get the online scope.
      *
      * @param $query
@@ -76,7 +68,6 @@ trait Draftable
     public function scopeOnline($query)
     {
         return $query
-            ->nonDraft()
             ->where('online', true);
     }
 }

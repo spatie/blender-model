@@ -108,7 +108,7 @@ abstract class Controller
 
     protected function all(): Collection
     {
-        $query = call_user_func("{$this->modelClass}::query")->nonDraft();
+        $query = call_user_func("{$this->modelClass}::query");
 
         if (array_key_exists(Sortable::class, class_implements($this->modelClass))) {
             $query->orderBy('order_column', 'asc');

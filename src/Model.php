@@ -2,6 +2,7 @@
 
 namespace Spatie\Blender\Model;
 
+use App\Scopes\NonDraftScope;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model as Eloquent;
@@ -17,6 +18,13 @@ abstract class Model extends Eloquent implements HasMediaConversions, GetsCleane
     use Traits\HasSeoValues;
 
     protected $guarded = ['id'];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope(new NonDraftScope());
+    }
 
     public function registerMediaConversions()
     {

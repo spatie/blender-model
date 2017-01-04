@@ -11,7 +11,7 @@ class NonDraftScope implements Scope
 {
     public function apply(Builder $builder, Model $model)
     {
-        if ($model instanceof Draftable) {
+        if (in_array(Draftable::class, class_uses_recursive($model))) {
             $builder->where('draft', false);
         }
     }

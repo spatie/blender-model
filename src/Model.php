@@ -2,14 +2,14 @@
 
 namespace Spatie\Blender\Model;
 
-use Spatie\Blender\Model\Scopes\NonDraftScope;
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model as Eloquent;
-use Spatie\Blender\Model\Scopes\OnlineScope;
-use Spatie\MediaLibrary\HasMedia\Interfaces\HasMediaConversions;
 use Spatie\ModelCleanup\GetsCleanedUp;
 use Spatie\Translatable\HasTranslations;
+use Illuminate\Database\Eloquent\Builder;
+use Spatie\Blender\Model\Scopes\OnlineScope;
+use Spatie\Blender\Model\Scopes\NonDraftScope;
+use Illuminate\Database\Eloquent\Model as Eloquent;
+use Spatie\MediaLibrary\HasMedia\Interfaces\HasMediaConversions;
 
 abstract class Model extends Eloquent implements HasMediaConversions, GetsCleanedUp
 {

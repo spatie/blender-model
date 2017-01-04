@@ -2,9 +2,9 @@
 
 namespace Spatie\Blender\Model\Updaters;
 
+use Spatie\MediaLibrary\Media;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\FormRequest;
-use Spatie\MediaLibrary\Media;
 
 trait UpdateMedia
 {

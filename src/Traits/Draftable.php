@@ -3,7 +3,7 @@
 namespace Spatie\Blender\Model\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
-use App\Scopes\NonDraftScope;
+use Spatie\Blender\Model\Scopes\NonDraftScope;
 use Carbon\Carbon;
 
 trait Draftable

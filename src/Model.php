@@ -2,10 +2,11 @@
 
 namespace Spatie\Blender\Model;
 
-use App\Scopes\NonDraftScope;
+use Spatie\Blender\Model\Scopes\NonDraftScope;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model as Eloquent;
+use Spatie\Blender\Model\Scopes\OnlineScope;
 use Spatie\MediaLibrary\HasMedia\Interfaces\HasMediaConversions;
 use Spatie\ModelCleanup\GetsCleanedUp;
 use Spatie\Translatable\HasTranslations;
@@ -24,6 +25,10 @@ abstract class Model extends Eloquent implements HasMediaConversions, GetsCleane
         parent::boot();
 
         static::addGlobalScope(new NonDraftScope());
+
+        if (! request()->isBack()) {
+            static::addGlobalScope(new OnlineScope());
+        }
     }
 
     public function registerMediaConversions()

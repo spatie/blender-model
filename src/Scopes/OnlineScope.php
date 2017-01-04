@@ -2,8 +2,8 @@
 
 namespace Spatie\Blender\Model\Scopes;
 
-use Illuminate\Database\Eloquent\Scope;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Scope;
 use Illuminate\Database\Eloquent\Builder;
 use Spatie\Blender\Model\Traits\Draftable;
 

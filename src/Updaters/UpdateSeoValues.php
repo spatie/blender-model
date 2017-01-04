@@ -2,11 +2,11 @@
 
 namespace Spatie\Blender\Model\Updaters;
 
+use Spatie\Regex\Regex;
+use Spatie\Regex\MatchResult;
+use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Collection;
-use Spatie\Regex\MatchResult;
-use Spatie\Regex\Regex;
 
 trait UpdateSeoValues
 {

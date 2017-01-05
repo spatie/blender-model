@@ -36,6 +36,12 @@ All Notable changes to `blender-model` will be documented in this file
 - rename all usages of `url` to `slug`
 - add support for `spatie/laravel-tags`
 
+## 1.0.11 - 2017-01-03
+- Fix `updateTranslations` request check
+
+## 1.0.10 - 2016-11-23
+- Flush cache afters `changeOrder`
+
 ## 1.0.9 - 2016-10-26
 - Fix destroy method
 

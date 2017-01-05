@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 1.0.11 - 2017-01-03
+- Fix `updateTranslations` request check
+
 ## 1.0.10 - 2016-11-23
 - Flush cache afters `changeOrder`
 

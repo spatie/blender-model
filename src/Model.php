@@ -3,11 +3,11 @@
 namespace Spatie\Blender\Model;
 
 use Carbon\Carbon;
+use Spatie\ModelCleanup\GetsCleanedUp;
+use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Spatie\MediaLibrary\HasMedia\Interfaces\HasMediaConversions;
-use Spatie\ModelCleanup\GetsCleanedUp;
-use Spatie\Translatable\HasTranslations;
 
 abstract class Model extends Eloquent implements HasMediaConversions, GetsCleanedUp
 {

@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 4.0.3 - 2016-01-05
+- Do not display temp media on front site
+
 ## 4.0.2 - 2016-01-05
 - Do not display temp media on front site
 

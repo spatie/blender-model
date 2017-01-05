@@ -2,8 +2,8 @@
 
 namespace Spatie\Blender\Model\Traits;
 
-use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Spatie\MediaLibrary\Media;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
 /**
  * Don't forget to set protected $mediaLibraryCollections.

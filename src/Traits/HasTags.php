@@ -2,8 +2,8 @@
 
 namespace Spatie\Blender\Model\Traits;
 
-use App\Models\Enums\TagType;
 use App\Models\Tag;
+use App\Models\Enums\TagType;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 

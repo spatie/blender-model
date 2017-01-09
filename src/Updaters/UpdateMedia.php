@@ -30,7 +30,7 @@ trait UpdateMedia
             });
         }
     }
-    
+
     protected function convertKeysToSnakeCase(array $array): array
     {
         return collect($array)->map(function ($mediaProperties) {

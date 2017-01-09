@@ -20,7 +20,7 @@ trait UpdateMedia
             }
 
             $updatedMedia = $model->updateMedia(
-                json_decode($request->get($collection), true),
+                $this->convertKeysToSnakeCase(json_decode($request->get($collection), true)),
                 $collection
             );
 
@@ -29,5 +29,14 @@ trait UpdateMedia
                 $media->save();
             });
         }
+    }
+    
+    protected function convertKeysToSnakeCase(array $array): array
+    {
+        return collect($array)->map(function ($mediaProperties) {
+            return collect($mediaProperties)->keyBy(function ($value, $key) {
+                return snake_case($key);
+            });
+        })->toArray();
     }
 }

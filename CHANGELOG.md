@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 1.0.12 - 2017-01-09
+- Fix custom properties in `updateMedia`
+
 ## 1.0.11 - 2017-01-03
 - Fix `updateTranslations` request check
 

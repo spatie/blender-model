@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 4.1.0 - 2016-01-10
+- add sortable scope
+
 ## 4.0.4 - 2016-01-05
 - fix for scope to filter draft media
 

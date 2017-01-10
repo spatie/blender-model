@@ -2,6 +2,13 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 4.2.1 - 2016-01-10
+- Media collection regression fixes
+
+## 4.2.0 - 2016-01-10
+- Add content blocks
+- Transformers now live here too
+
 ## 4.1.0 - 2016-01-10
 - add sortable scope
 

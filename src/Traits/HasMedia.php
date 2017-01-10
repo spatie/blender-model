@@ -2,7 +2,6 @@
 
 namespace Spatie\Blender\Model\Traits;
 
-use Illuminate\Support\Collection;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
 /**

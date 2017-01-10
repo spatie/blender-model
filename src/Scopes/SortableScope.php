@@ -2,11 +2,10 @@
 
 namespace Spatie\Blender\Model\Scopes;
 
+use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;
 use Illuminate\Database\Eloquent\Builder;
-use Spatie\Blender\Model\Traits\Draftable;
-use Spatie\EloquentSortable\Sortable;
 
 class SortableScope implements Scope
 {

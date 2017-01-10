@@ -2,10 +2,10 @@
 
 namespace Spatie\Blender\Model;
 
-use Illuminate\Support\ServiceProvider;
-use Spatie\Blender\Model\Scopes\NonDraftMediaScope;
-use Spatie\Blender\Model\Scopes\SortableScope;
 use Spatie\MediaLibrary\Media;
+use Illuminate\Support\ServiceProvider;
+use Spatie\Blender\Model\Scopes\SortableScope;
+use Spatie\Blender\Model\Scopes\NonDraftMediaScope;
 
 class BlenderModelServiceProvider extends ServiceProvider
 {

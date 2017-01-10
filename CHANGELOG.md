@@ -2,7 +2,7 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
-## 4.2.1 - 2016-01-10
+## 4.2.2 - 2016-01-10
 - Media collection regression fixes
 
 ## 4.2.0 - 2016-01-10

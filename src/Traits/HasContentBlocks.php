@@ -17,14 +17,14 @@ trait HasContentBlocks
             ->orderBy('order_column');
     }
 
-    public function getContentBlockCollectionNames(): array
+    public function getContentBlockCollections(): array
     {
         return $this->contentBlockCollections ?? ['default'];
     }
 
     public function getContentBlockMediaLibraryCollections(): array
     {
-        return $this->contentBlockMediaLibraryCollections ?? [];
+        return $this->contentBlockMediaLibraryCollections ?? ['image'];
     }
 
     public function getContentBlocks($collection = 'default'): Collection
@@ -34,7 +34,7 @@ trait HasContentBlocks
 
     public function syncContentBlocks(Request $request)
     {
-        foreach ($this->getContentBlockCollectionNames() as $collection) {
+        foreach ($this->getContentBlockCollections() as $collection) {
             if (! $request->has("content_blocks_{$collection}")) {
                 continue;
             }

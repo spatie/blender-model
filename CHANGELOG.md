@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 4.2.3 - 2016-01-11
+- Content block tweaks
+
 ## 4.2.2 - 2016-01-10
 - Media collection regression fixes
 

@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 4.2.7 - 2016-01-12
+- fix typehint of `hasContentBlocks`
+
 ## 4.2.6 - 2016-01-12
 - fix typehint of `hasContentBlocks`
 

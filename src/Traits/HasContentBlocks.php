@@ -22,7 +22,7 @@ trait HasContentBlocks
         return $this->contentBlockCollections ?? ['default'];
     }
 
-    public function hasContentBlocks($collection = 'default'): array
+    public function hasContentBlocks($collection = 'default'): int
     {
         return $this->getContentBlocks($collection)->count();
     }

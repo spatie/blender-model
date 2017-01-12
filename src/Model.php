@@ -3,6 +3,7 @@
 namespace Spatie\Blender\Model;
 
 use Carbon\Carbon;
+use Spatie\Blender\Model\Scopes\SortableScope;
 use Spatie\ModelCleanup\GetsCleanedUp;
 use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Builder;
@@ -26,8 +27,9 @@ abstract class Model extends Eloquent implements HasMediaConversions, GetsCleane
 
         static::addGlobalScope(new NonDraftScope());
 
-        if (! request()->isBack()) {
+        if (request()->isFront()) {
             static::addGlobalScope(new OnlineScope());
+            static::addGlobalScope(new SortableScope());
         }
     }
 

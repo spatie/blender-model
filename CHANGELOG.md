@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 4.2.4 - 2016-01-12
+- Use SortableScope on all front models
+
 ## 4.2.3 - 2016-01-11
 - Content block tweaks
 

@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 4.2.5 - 2016-01-12
+- add `hasContentBlocks`
+
 ## 4.2.4 - 2016-01-12
 - Use SortableScope on all front models
 

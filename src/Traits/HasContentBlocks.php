@@ -22,6 +22,11 @@ trait HasContentBlocks
         return $this->contentBlockCollections ?? ['default'];
     }
 
+    public function hasContentBlocks($collection = 'default'): array
+    {
+        return $this->getContentBlocks($collection)->count();
+    }
+
     public function getContentBlockMediaLibraryCollections(): array
     {
         return $this->contentBlockMediaLibraryCollections ?? ['image'];

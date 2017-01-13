@@ -21,7 +21,7 @@ trait UpdateMedia
             );
 
             collect($updatedMedia)->each(function (Media $media) {
-                $media->setCustomProperty('temp', false);
+                $media->setCustomProperty('draft', false);
                 $media->save();
             });
         }

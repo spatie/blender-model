@@ -2,6 +2,10 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+
+## 4.2.8 - 2016-01-13
+- rename `temp` to `draft` in media custom properties
+
 ## 4.2.7 - 2016-01-12
 - fix typehint of `hasContentBlocks`
 

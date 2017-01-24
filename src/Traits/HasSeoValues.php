@@ -2,6 +2,8 @@
 
 namespace Spatie\Blender\Model\Traits;
 
+use Illuminate\Support\HtmlString;
+
 trait HasSeoValues
 {
     /**
@@ -19,9 +21,9 @@ trait HasSeoValues
         return $this->seo()->get($key);
     }
 
-    public function renderSeoTags(): string
+    public function renderSeoTags()
     {
-        return $this->seo()->filter(function ($value, $key) {
+        $html = $this->seo()->filter(function ($value, $key) {
             return starts_with($key, 'meta_');
         })->map(function ($value, $key) : string {
             $key = substr($key, 5);
@@ -29,5 +31,7 @@ trait HasSeoValues
 
             return "<meta {$attribute}=\"{$key}\" content=\"{$value}\">";
         })->implode("\n");
+
+        return new HtmlString($html);
     }
 }

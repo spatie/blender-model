@@ -2,8 +2,11 @@
 
 All notable changes to `blender-model` will be documented in this file
 
+## 4.2.10 - 2016-01-24
+- allow drafts in `Controller::find`
+
 ## 4.2.9 - 2016-01-24
-- improve support for Laravel 5.4 
+- improve support for Laravel 5.4
 
 ## 4.2.8 - 2016-01-13
 - rename `temp` to `draft` in media custom properties

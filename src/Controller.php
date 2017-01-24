@@ -103,7 +103,9 @@ abstract class Controller
 
     protected function find(int $id): Eloquent
     {
-        return call_user_func("{$this->modelClass}::findOrFail", $id);
+        return call_user_func([$this->modelClass, 'where'], 'id', $id)
+            ->withoutGlobalScope(NonDraftScope::class)
+            ->firstOrFail();
     }
 
     protected function all(): Collection

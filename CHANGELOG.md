@@ -2,7 +2,7 @@
 
 All notable changes to `blender-model` will be documented in this file
 
-## 4.2.10 - 2016-01-24
+## 4.2.11 - 2016-01-24
 - allow drafts in `Controller::find`
 
 ## 4.2.9 - 2016-01-24

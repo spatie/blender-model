@@ -3,12 +3,12 @@
 namespace Spatie\Blender\Model;
 
 use Carbon\Carbon;
-use Spatie\Blender\Model\Scopes\SortableScope;
 use Spatie\ModelCleanup\GetsCleanedUp;
 use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Builder;
 use Spatie\Blender\Model\Scopes\OnlineScope;
 use Spatie\Blender\Model\Scopes\NonDraftScope;
+use Spatie\Blender\Model\Scopes\SortableScope;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Spatie\MediaLibrary\HasMedia\Interfaces\HasMediaConversions;
 

@@ -2,6 +2,9 @@
 
 All Notable changes to `blender-model` will be documented in this file
 
+## 3.1.3 - 2017-01-25
+- `renderSeoTags` now returns and `HtmlString`
+
 ## 3.1.2 - 2017-01-25
 - Fix `mediaLibraryCollectionNames` function
 

@@ -18,6 +18,6 @@ trait HasMedia
 
     public function mediaLibraryCollectionNames(): array
     {
-        return array_keys($this->mediaLibraryCollections) ?? [];
+        return $this->mediaLibraryCollections ?? [];
     }
 }

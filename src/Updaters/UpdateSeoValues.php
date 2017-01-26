@@ -12,6 +12,12 @@ trait UpdateSeoValues
 {
     protected function updateSeoValues(Model $model, FormRequest $request)
     {
+        $mapWithKeysFunctionName = 'mapWithKeys';
+
+        if (starts_with(app()->version(), '5.3')) {
+            $mapWithKeysFunctionName = 'mapToAssoc';
+        }
+
         collect($request->all())
             ->filter(function ($value, $fieldName) {
                 // Filter out everything that starts with 'translated_<locale>_seo_'
@@ -33,8 +39,8 @@ trait UpdateSeoValues
                 ];
             })
             ->groupBy('locale')
-            ->map(function (Collection $valuesInLocale) {
-                return $valuesInLocale->mapToAssoc(function ($values) {
+            ->map(function (Collection $valuesInLocale) use ($mapWithKeysFunctionName) {
+                return $valuesInLocale->$mapWithKeysFunctionName(function ($values) {
                     return [$values['attribute'], $values['value']];
                 });
             })

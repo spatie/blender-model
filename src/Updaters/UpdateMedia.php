@@ -11,16 +11,14 @@ trait UpdateMedia
     protected function updateMedia(Model $model, FormRequest $request)
     {
         foreach ($model->mediaLibraryCollections() as $collection) {
-            if (! $request->has($collection)) {
+            if (!$request->has($collection)) {
                 continue;
             }
 
-            $updatedMedia = $model->updateMedia(
+            $model->updateMedia(
                 $this->convertKeysToSnakeCase(json_decode($request->get($collection), true)),
                 $collection
-            );
-
-            collect($updatedMedia)->each(function (Media $media) {
+            )->each(function (Media $media) {
                 $media->setCustomProperty('draft', false);
                 $media->save();
             });

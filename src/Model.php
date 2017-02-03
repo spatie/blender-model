@@ -36,13 +36,13 @@ abstract class Model extends Eloquent implements HasMediaConversions, GetsCleane
     public function registerMediaConversions()
     {
         $this->addMediaConversion('admin')
-            ->setWidth(368)
-            ->setHeight(232)
+            ->width(368)
+            ->height(232)
             ->nonQueued();
 
         $this->addMediaConversion('redactor')
-            ->setWidth(368)
-            ->setHeight(232)
+            ->width(368)
+            ->height(232)
             ->nonQueued();
     }
 

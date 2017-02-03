@@ -2,6 +2,9 @@
 
 All notable changes to `blender-model` will be documented in this file
 
+## 4.2.13 - 2017-02-03
+- make compatible with `spatie/laravel-medialibrary` v5
+
 ## 4.2.12 - 2016-01-24
 - allow drafts in `Controller::find`
 

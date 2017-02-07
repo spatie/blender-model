@@ -2,9 +2,9 @@
 
 namespace Spatie\Blender\Model\Updaters;
 
+use Spatie\MediaLibrary\Media;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\FormRequest;
-use Spatie\MediaLibrary\Media;
 
 trait UpdateMedia
 {
@@ -29,8 +29,8 @@ trait UpdateMedia
 
     protected function convertKeysToSnakeCase(array $array): array
     {
-        return collect($array)->map(function($mediaProperties) {
-            return collect($mediaProperties)->keyBy(function($value, $key) {
+        return collect($array)->map(function ($mediaProperties) {
+            return collect($mediaProperties)->keyBy(function ($value, $key) {
                 return snake_case($key);
             });
         })->toArray();

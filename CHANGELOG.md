@@ -2,11 +2,17 @@
 
 All notable changes to `blender-model` will be documented in this file
 
+## 5.0.2 - 2017-02-16
+- Fixed `updateDates`
+
 ## 5.0.1 - 2017-02-03
 - make compatible with `spatie/laravel-medialibrary` v5
 
 ## 5.0.0 - 2017-02-03
 - make compatible with `spatie/laravel-medialibrary` v5
+
+## 4.2.14 - 2017-02-16
+- Fixed `updateDates`
 
 ## 4.2.13 - 2017-02-03
 - make compatible with `spatie/laravel-medialibrary` v5

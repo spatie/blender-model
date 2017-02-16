@@ -11,7 +11,7 @@ trait UpdateMedia
     protected function updateMedia(Model $model, FormRequest $request)
     {
         foreach ($model->mediaLibraryCollections() as $collection) {
-            if (!$request->has($collection)) {
+            if (! $request->has($collection)) {
                 continue;
             }
 

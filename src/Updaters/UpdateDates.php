@@ -10,11 +10,7 @@ trait UpdateDates
 {
     protected function updateDates(Model $model, FormRequest $request)
     {
-        if (! isset($model->dates)) {
-            return;
-        }
-
-        foreach ($model->dates as $dateAttribute) {
+        foreach ($model->getDates() as $dateAttribute) {
             if ($request->has($dateAttribute)) {
                 $model->$dateAttribute = Carbon::createFromFormat('d/m/Y', $request->get($dateAttribute));
             }

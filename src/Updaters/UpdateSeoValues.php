@@ -34,8 +34,8 @@ trait UpdateSeoValues
             })
             ->groupBy('locale')
             ->map(function (Collection $valuesInLocale) {
-                return $valuesInLocale->mapToAssoc(function ($values) {
-                    return [$values['attribute'], $values['value']];
+                return $valuesInLocale->mapWithKeys(function ($values) {
+                    return [$values['attribute'] => $values['value']];
                 });
             })
             ->each(function ($values, $locale) use ($model) {

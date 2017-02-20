@@ -154,7 +154,7 @@ abstract class Controller
 
     protected function updatedEventDescriptionFor(Eloquent $model): string
     {
-        $modelName = __("back.modules.{$this->moduleName}");
+        $modelName = ucfirst(__("back.modules.{$this->moduleName}"));
 
         $linkToModel = '"<a href="'.$this->action('edit', $model->id).'">'.$model->name.'</a>"';
 
@@ -167,7 +167,7 @@ abstract class Controller
 
     protected function deletedEventDescriptionFor(Eloquent $model): string
     {
-        $modelName = __("back.modules.{$this->moduleName}");
+        $modelName = ucfirst(__("back.modules.{$this->moduleName}"));
 
         return $modelName.' "'.$model->name.'" '.__('werd verwijderd');
     }

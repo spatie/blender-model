@@ -2,6 +2,9 @@
 
 All notable changes to `blender-model` will be documented in this file
 
+## 5.1.0 - 2017-02-20
+- Removed `fragment` usages
+
 ## 5.0.2 - 2017-02-16
 - Fixed `updateDates`
 

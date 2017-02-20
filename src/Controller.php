@@ -154,22 +154,22 @@ abstract class Controller
 
     protected function updatedEventDescriptionFor(Eloquent $model): string
     {
-        $modelName = fragment("back.{$this->moduleName}.singular");
+        $modelName = __("back.modules.{$this->moduleName}");
 
-        $linkToModel = el('a', ['href' => $this->action('edit', $model->id)], $model->name);
+        $linkToModel = '"<a href="'.$this->action('edit', $model->id).'">'.$model->name.'</a>"';
 
         if ($model->wasDraft) {
-            return fragment('back.events.created', ['model' => $modelName, 'name' => $linkToModel]);
+            return $modelName.' '.$linkToModel.' '.__('werd aangemaakt');
         }
 
-        return fragment('back.events.updated', ['model' => $modelName, 'name' => $linkToModel]);
+        return $modelName.' '.$linkToModel.' '.__('werd gewijzigd');
     }
 
     protected function deletedEventDescriptionFor(Eloquent $model): string
     {
-        $modelName = fragment("back.{$this->moduleName}.singular");
+        $modelName = __("back.modules.{$this->moduleName}");
 
-        return fragment('back.events.deleted', ['model' => $modelName, 'name' => $model->name]);
+        return $modelName.' "'.$model->name.'" '.__('werd verwijderd');
     }
 
     protected function action(string $action, $parameters = []): string

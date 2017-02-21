@@ -2,7 +2,7 @@
 
 All notable changes to `blender-model` will be documented in this file
 
-## 5.1.2 - 2017-02-20
+## 5.1.3 - 2017-02-20
 - Fixed old collection call for L5.4
 
 ## 5.1.1 - 2017-02-20

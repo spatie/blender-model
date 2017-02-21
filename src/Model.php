@@ -26,10 +26,10 @@ abstract class Model extends Eloquent implements HasMediaConversions, GetsCleane
         parent::boot();
 
         static::addGlobalScope(new NonDraftScope());
+        static::addGlobalScope(new SortableScope());
 
         if (request()->isFront()) {
             static::addGlobalScope(new OnlineScope());
-            static::addGlobalScope(new SortableScope());
         }
     }
 

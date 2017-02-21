@@ -11,7 +11,7 @@ class SortableScope implements Scope
 {
     public function apply(Builder $builder, Model $model)
     {
-        if (request()->isFront() && $model instanceof Sortable) {
+        if ($model instanceof Sortable) {
             $builder->orderBy('order_column');
         }
     }

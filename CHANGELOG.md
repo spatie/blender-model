@@ -2,6 +2,9 @@
 
 All notable changes to `blender-model` will be documented in this file
 
+## 5.1.4
+- Also apply the `SortableScope` in back requests
+
 ## 5.1.3 - 2017-02-20
 - Fixed old collection call for L5.4
 

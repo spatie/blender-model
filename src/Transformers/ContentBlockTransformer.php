@@ -17,6 +17,7 @@ class ContentBlockTransformer extends TransformerAbstract
 
         return array_merge(
             $attributes,
+            $contentBlock->properties,
             $this->getMediaAttributes($contentBlock),
             $this->getTranslatedAttributes($contentBlock)
         );

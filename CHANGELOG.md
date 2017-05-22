@@ -2,6 +2,9 @@
 
 All notable changes to `blender-model` will be documented in this file
 
+## 5.1.7
+- Fixed: Added properties to `ContentBlockTransformer`
+
 ## 5.1.6
 - Use a regex in `NonDraftMediaScope` for sqlite compat
 

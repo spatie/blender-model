@@ -1,3 +1,5 @@
+**THIS PACKAGE IS ABANDONED**
+
 # Base model for entities in our Blender Laravel template
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/blender-model.svg?style=flat-square)](https://packagist.org/packages/spatie/blender-model)
